@@ -27,6 +27,7 @@ def dir_namespace():
     print(listObj)
 
 
+
 def obj_introspect(inObj, return_list = False):
     listObj = []
     for items in dir(inObj):
