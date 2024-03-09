@@ -3,6 +3,10 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# WingIDE
+*.wpr
+*.wpu
+
 # C extensions
 *.so
 
