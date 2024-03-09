@@ -1,7 +1,7 @@
 import os
 import sqlite3
 
-def file_hash(filename):
+def file_hash(filename, chunk_size = 1024):
     import hashlib
     # make a hash object
     h = hashlib.sha1()
@@ -13,7 +13,7 @@ def file_hash(filename):
         chunk = 0
         while chunk != b'':
             # read only 1024 bytes at a time
-            chunk = file.read(1024)
+            chunk = file.read(chunk_size)
             h.update(chunk)
 
     # return the hex representation of digest
